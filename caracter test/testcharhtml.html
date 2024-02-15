@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="testcharcss.css">
+</head>
+
+<body>
+    <section id="entername">
+        <h1>Enter Name</h1>
+        <!-- firstname input -->
+        <label for="personnameinput">First name</label>
+        <input type="text" id="personnameinput" oninput="personname()">
+
+        <!-- lastname input -->
+        <label for="lastnameinput">last name</label>
+        <input type="text" id="lastnameinput" oninput="lastname()">
+        <button onclick="namebutton()">Enter</button>
+
+        <!-- diplay of firstname and lastname -->
+        <p id="nameofperson"></p>
+
+    </section>
+
+    <!-- choose an animal -->
+    <section id="chooseanimalsection" oninput="chosenanimal()">
+        <h1>Please Choose an animal</h1>
+        <select id="chooseanimal" name="chooseanimal">
+            <option>select one</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Monkey">Monkey</option>
+            <option value="Snake">Snake</option>
+            <option value="Lion">Lion</option>
+            <select>
+
+                <button id="chooseanimalbutton" onclick="animalbutton()">Enter</button>
+                <p id="animalchoice"></p>
+    </section>
+
+    <!-- roll a dice -->
+    <section id="Dicerollsection">
+        <h1>Roll a Dice</h1>
+        <button id="dicerollbutton" onclick="randomnumber()">click to roll</button>
+        <p id="dicevalue"></p>
+    </section>
+
+    <!-- javascript script -->
+    <script src="testcharjavascript.js"></script>
+</body>
+
+</html>

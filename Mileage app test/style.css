@@ -1,0 +1,89 @@
+/*everything*/
+* {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+/*Body*/
+body {
+    max-width: 640px;
+    width: 640px;
+}
+
+/*header*/
+header {
+    max-height: 88px;
+    max-width: 640px;
+    height: 88px;
+    width: 640px;
+}
+
+/*main h1 heading*/
+.mainheading {
+    float: left;
+    font-size: 40px;
+    margin: 20.5px 0px;
+}
+
+/* nav menu*/
+.navicons {
+    float: right;
+    align-items: center;
+    margin: 14px 0px;
+}
+
+
+/*nav image styling or images*/
+.navicons>ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*Images in nav*/
+.navicons img {
+    height: 50px;
+    width: 50px;
+}
+
+/*search image*/
+
+.searchicon {
+    max-height: 68px;
+    max-width: 68px;
+    float: left;
+}
+
+/*searchbar*/
+.topsearchbar {
+    float: left;
+    max-width: 640px;
+    width: 63%;
+    height: 68px;
+}
+
+/*dropdown*/
+.dropdown {
+    width: 25%;
+    height: 68px;
+    float: right;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    max-width: 640px;
+    width: 100%;
+}
+
+.user {
+    max-height: 50px;
+    float: left;
+}
+
+.username {
+    max-height: 50px;
+    float: left;
+    font-size: 40px;
+}

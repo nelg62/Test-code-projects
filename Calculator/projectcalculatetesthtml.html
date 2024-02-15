@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="rojectcalculatetestcss.css">
+</head>
+
+<body>
+
+    <section class="Calcbody">
+
+        <section class="solarpanel">
+            <div class="solarpanelpiece"></div>
+            <div class="solarpanelpiece"></div>
+            <div class="solarpanelpiece"></div>
+            <div class="solarpanelpiece"></div>
+            <div class="solarpanelpiece"></div>
+        </section>
+
+        <section class="calcscreen">
+            <h1 id="calctext" class="calctext"></h1>
+        </section>
+
+        <section class="btnsection">
+            <!-- Number Buttons -->
+            <section class="btnnumdiv">
+                <input type="button" value="9" id="ninebtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="8" id="eightbtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="7" id="sevenbtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="6" id="sixbtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="5" id="fivebtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="4" id="fourbtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="3" id="threebtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="2" id="twobtn" class="numbtn" onclick="writeToH(this.value)">
+                <input type="button" value="1" id="onebtn" class="numbtn" onclick="writeToH(this.value)">
+                <!-- clear button -->
+                <input type="button" value="C" id="clearbtn" class="wipebtn" onclick="clearCalc()">
+                <input type="button" value="0" id="zerobtn" class="numbtn" onclick="writeToH(this.value)">
+                <!-- = button -->
+                <input type="button" value="=" id="equalsbtn" class="resaultbtn" onclick="equalsbtn()">
+            </section>
+
+            <!-- / * + - buttons -->
+            <section class="actionbtns">
+                <input type="button" value="+" id="plusbtn" class="changebtn" onclick="writeToH(this.value)">
+                <input type="button" value="-" id="minusbtn" class="changebtn" onclick="writeToH(this.value)">
+                <input type="button" value="*" id="multiplybtn" class="changebtn" onclick="writeToH(this.value)">
+                <input type="button" value="/" id="dividebtn" class="changebtn" onclick="writeToH(this.value)">
+            </section>
+
+        </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="rojectcalculatetestjavascrpt.js"></script>
+</body>
+
+</html>

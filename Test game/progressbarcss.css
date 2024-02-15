@@ -1,0 +1,96 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+}
+
+/* box area holding content */
+#mainscreen {
+    width: 100%;
+    height: 90%;
+    border: solid black 1px;
+    display: flex;
+}
+
+/* section to the left for player */
+#playersection {
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+}
+
+/* section to the right for enemy */
+#enemysection {
+    width: 50%;
+    height: auto;
+    border: solid black 1px;
+}
+
+#infowindow {
+    display: flex;
+    width: 100%;
+
+}
+
+/* statbox holding information of stats and health and things */
+#statbox {
+    width: 50%;
+    border: solid black 1px;
+    flex-direction: column;
+}
+
+/* healthbar and mana bar sizing  */
+#healthbar,
+#manabar {
+    height: 20px;
+    border: solid black 1px;
+}
+
+/* healthbar color individual */
+#healthbar {
+    background-color: green;
+}
+
+/* manabar color individual */
+#manabar {
+    background-color: blue;
+}
+
+#handbuttons {
+    display: flex;
+}
+
+#rockbutton, #paperbutton, #scissorsbutton {
+    display: none;
+}
+
+/* box containing buttons */
+#valuebuttons {
+    display: flex;
+    width: 50%;
+    height: 20px;
+}
+
+/* values for buttons in box */
+#valuebuttons>button {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* enemy statbox */
+#enemystatbox {
+    width: 50%;
+    border: solid black 1px;
+    flex-direction: column;
+}
+
+#enemyhealthbar {
+    height: 20px;
+    border: solid black 1px;
+    background-color: green;
+}
+
+
+

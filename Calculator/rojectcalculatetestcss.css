@@ -1,0 +1,111 @@
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+.body,
+html {
+    display: flex;
+    justify-content: center;
+}
+
+/* calculator body */
+.Calcbody {
+    height: 700px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background: linear-gradient(black, grey)
+}
+
+/* solar panel */
+.solarpanel {
+    height: 40px;
+    width: 30%;
+    float: right;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 15px 15px 0px 0px;
+    background-color: burlywood;
+}
+
+.solarpanelpiece {
+    border: 1px solid black;
+}
+
+/* calculator screen */
+.calcscreen {
+    display: flex;
+    height: 90px;
+    margin: 80px;
+    background-color: silver;
+    outline: 15px solid azure;
+    border: 1px solid black;
+}
+
+.calctext {
+    font-size: 80px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+/* all button section */
+.btnsection {
+    display: grid;
+    grid-template-columns: auto 20%;
+    height: 50%;
+    gap: 5px;
+    margin: 0 10px;
+}
+
+/* numberbuttons and C and = */
+.btnnumdiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+.numbtn {
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+/* C button */
+.wipebtn {
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+/* = button */
+.resaultbtn {
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+/* + - * / buttons */
+.actionbtns {
+    display: grid;
+    gap: 5px;
+}
+
+.changebtn {
+    font-size: 30px;
+    border-radius: 5%;
+}

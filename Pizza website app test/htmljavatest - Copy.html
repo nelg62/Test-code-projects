@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title id="title">title</title>
+    <link rel="stylesheet" href="cssjavatest.css">
+</head>
+
+<body>
+
+
+    <!-- heading -->
+    <header>
+        <h1>Make a Pizza</h1>
+        <img src="pizza.png" id="pizzaimage" name="pizzaimage" alt="picture of pizza">
+        <!-- paragraph -->
+        <p>please choose from the options below to make your pizza</p>
+    </header>
+
+    <!-- fist section buttons to take to selected option -->
+    <section id="navigation">
+        <ul>
+            <li><button><a href="#base">Base</a></button></li>
+            <li><button><a href="#sauce">Sauce</a></button></li>
+            <li><button><a href="#toppings">Toppings</a></button></li>
+            <li><button><a href="#sides">Sides</a></button></li>
+            <li><button><a href="#drinks">Drinks</a></button></li>
+            <li><button><a href="#desserts">Desserts</a></button></li>
+        </ul>
+    </section>
+    <section id="pizzabody">
+        <!-- second section with option fieldsets -->
+        <section id="makepizzaoptions">
+
+            <!-- choose a base options -->
+            <fieldset id="base" name="base">
+                <legend>Type of base</legend>
+                <!-- regular -->
+                <label for="regular"><input type="radio" id="regular" name="baseoption" value="regular">Regular
+                    Base<img src="Regularpizzapic.png" id="regularbase" name="regularbase"
+                        alt="picture of base"></label>
+
+                <!-- large -->
+                <label for="large"><input type="radio" id="large" name="baseoption" value="large">Large Base<img
+                        src="largepizzapic.png" id="largebase" name="largebase" alt="picture of large base"></label>
+
+
+            </fieldset>
+
+            <!-- choose sauce options -->
+            <fieldset id="sauce" name="sauce">
+                <legend>Sauce</legend>
+                <!-- tomato sauce -->
+                <label for="tomatosauce"><input type="radio" id="tomatosauce" name="sauceoption"
+                        value="tomatosauce">Tomato<img src="tomato-sauce.png" id="tomatosauceimage"
+                        name="tomatosauceimage" alt="picture of tomato sauce"></label>
+
+                <!-- BBQ sauce -->
+                <label for="bbqsauce"><input type="radio" id="bbqsauce" name="sauceoption" value="bbqsauce">BBQ
+                    Sauce<img src="bbq-sauce.png" id="bbqsauceimage" name="bbqsauceimage"
+                        alt="picture of bbq sauce"></label>
+
+                <!-- mayo sauce -->
+                <label for="mayosauce"><input type="radio" id="mayosauce" name="sauceoption" value="mayosauce">Mayo<img
+                        src="mayonnaise.png" id="mayosauce" name="mayosauce" alt="picture of mayo"></label>
+
+
+            </fieldset>
+
+            <!-- choose toppings options -->
+            <fieldset id="toppings" name="toppings">
+                <legend>Toppings</legend>
+                <!-- cheese -->
+                <label for="cheese"><input type="checkbox" id="cheese" name="cheese" value="cheese">Cheese<img
+                        src="cheese.png" id="cheesetopping" name="cheesetopping" alt="picture of cheese"></label>
+
+                <!-- ham -->
+                <label for="ham"><input type="checkbox" id="ham" name="ham" value="ham">Ham<img src="roasted.png"
+                        id="hamtopping" name="hamtopping" alt="picture of ham"></label>
+
+                <!-- chicken -->
+                <label for="chicken"><input type="checkbox" id="chicken" name="chicken" value="chicken">Chicken<img
+                        src="chicken-leg.png" id="chickentopping" name="chickentopping"
+                        alt="picture of chicken"></label>
+
+
+            </fieldset>
+
+            <!-- choose sides option -->
+            <fieldset id="sides" name="sides">
+                <legend>Sides</legend>
+                <!-- chips -->
+                <label for="chips"><input type="checkbox" id="chips" name="chips" value="chips">Chips<img
+                        src="fried-potatoes.png" id="chipssides" name="chipssides" alt="picture of chips"></label>
+
+                <!-- onion rings -->
+                <label for="onionring"><input type="checkbox" id="onionring" name="onionring" value="onionring">Onion
+                    Rings<img src="onion-rings.png" id="onionringside" name="onionringside"
+                        alt="picture of onion rings"></label>
+
+
+            </fieldset>
+
+            <!-- choose drinks option -->
+            <fieldset id="drinks" name="drinks">
+                <legend>Drinks</legend>
+                <!-- coke -->
+                <label for="coke"><input type="checkbox" id="coke" name="coke" value="coke">Coke<img
+                        src="soda-bottle.png" id="cokedrink" name="cokedrink" alt="picture of coke"></label>
+
+                <!-- sprite -->
+                <label for="sprite"><input type="checkbox" id="sprite" name="sprite" value="sprite">Sprite<img
+                        src="soft-drink.png" id="spritedrink" name="spritedrink" alt="picture of sprite"></label>
+
+                <!-- fanta -->
+                <label for="fanta"><input type="checkbox" id="fanta" name="fanta" value="fanta">Fanta<img
+                        src="bottle.png" id="fantadrink" name="fantadrink" alt="picture of fanta"></label>
+
+
+            </fieldset>
+
+            <!-- choose desert option -->
+            <fieldset id="desserts" name="desserts">
+                <legend>Desserts</legend>
+                <!-- cake -->
+                <label for="cake"><input type="checkbox" id="cake" name="cake" value="cake">Cake<img
+                        src="strawberry-cake.png" id="cakedessert" name="cakedessert" alt="picture of cake"></label>
+
+                <!-- ice cream -->
+                <label for="icecream"><input type="checkbox" id="icecream" name="icecream" value="icecream">Ice
+                    Cream<img src="ice-cream.png" id="icecreamdessert" name="icecreamdessert"
+                        alt="picture of ice cream"></label>
+
+
+            </fieldset>
+
+            <!-- submit button -->
+            <button type="submit">Submit</button>
+        </section>
+
+        <footer></footer>
+
+    </section>
+</body>
+
+</html>

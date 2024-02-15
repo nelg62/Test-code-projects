@@ -1,0 +1,105 @@
+/* everything */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* hedder */
+header {
+    display: flex;
+    text-align: center;
+    /* background-color: rgb(235, 206, 168); */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+
+}
+
+/* pizza image */
+#pizzaimage {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* top navigation button section */
+#navigation {
+    display: flex;
+    text-align: center;
+    max-width: 600px;
+    max-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+}
+
+/* top navigation button list section */
+#navigation ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navigation li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* top navigation button section */
+#navigation button {
+    height: 20px;
+    width: 58px;
+}
+
+/* top navigation link section */
+#navigation a {
+    text-decoration: none;
+}
+
+#pizzabody {
+    background-image: url("fixed-price-pizza-pizza-dough-clipart-11563029204cueu0mmqbb-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 950px;
+}
+
+/* first section for all selection options */
+#makepizzaoptions {
+    display: flex;
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    
+
+}
+
+/* top fieldset items */
+fieldset {
+    
+    
+}
+
+/* heading of item */
+legend {
+    font-size: 30px;
+    
+}
+
+
+/* image of item */
+fieldset> label > img {
+    height: 100px;
+    width: 100px;
+    
+
+}
+
+footer {
+   
+}

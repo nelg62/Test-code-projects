@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <!-- css stylesheet  -->
+    <link rel="stylesheet" href="progressbarcss.css">
+</head>
+
+<body>
+    <!-- main screen with player and enemy section  -->
+    <section id="mainscreen">
+        <div id="playersection">
+            <h1 id="texttest"></h1>
+            <p id="testtext2"></p>
+            <p id="testtext3"></p>
+        </div>
+        <div id="enemysection">
+        </div>
+    </section>
+
+    <section id="infowindow">
+        <!-- display player health curret and max  -->
+        <section id="statbox">
+
+            <!-- display current health / maxhealth -->
+            <div id="health"></div>
+
+            <!-- display current healthbar -->
+            <div id="healthbar"></div>
+
+            <!-- display current mana / max mana -->
+            <div id="mana"></div>
+
+            <!-- display crrent manabar -->
+            <div id="manabar"></div>
+
+        </section>
+
+        <section id="enemystatbox">
+            <div id="enemyhealth"></div>
+            <div id="enemyhealthbar"></div>
+        </section>
+    </section>
+
+    <!-- hand option buttons -->
+    <section id="handbuttons">
+        <button id="startbutton" onclick="startbuttonfun()">Start!</button>
+        <button id="rockbutton" value="rock" onclick="rockbuttonfun()">Rock</button>
+        <button id="paperbutton" value="paper" onclick="paperbuttonfun()">Paper</button>
+        <button id="scissorsbutton" value="scissors" onclick="scissorsbuttonfun()">Scissors</button>
+    </section>
+    <!-- buttons for +10 and -10 to health bar -->
+    <section id="valuebuttons">
+        <button id="attack" onclick="attack()">-10</button>
+        <button id="heal" onclick="heal()">+10</button>
+    </section>
+
+    <!-- javscript script -->
+    <script src="progressbarjavascript.js"></script>
+</body>
+
+</html>

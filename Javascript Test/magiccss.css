@@ -1,0 +1,10 @@
+/* choose image button */
+#changeimg {
+    height: 100px;
+    width: 100px;
+}
+
+/* Show hidden text */
+#hiddentext {
+    display: none;
+}

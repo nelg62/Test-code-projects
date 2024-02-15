@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+#buttoncoiceimage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttoncoiceimage img {
+    height: 100px;
+    width: 100px;
+}
+
+#chooseabutton {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#chooseabutton button {
+    width: 100px;
+    height: 50px;
+    appearance: none;
+    border: none;
+    background-color: inherit;
+}
+
+#chooseabutton img {
+    height: 100px;
+    width: 100px;
+}
+
+#choices {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#playerchoice,
+#opponentchoice {
+    border: solid black 1px;
+    border-radius: 3%;
+    font-size: 20px;
+}
+
+#playerimage {
+    border-right: solid black 1px;
+    padding: 5px;
+}
+
+#opponentimage {
+    border-left: solid black 1px;
+    padding: 5px;
+}
+
+#showresult {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#result {
+    font-size: 30px;
+}
+
+#total {
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+#total div {
+    border: solid black 1px;
+    padding: 2px;
+    border-radius: 10%;
+}

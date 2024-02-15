@@ -1,0 +1,474 @@
+/* animations */
+
+@keyframes movelefteye {
+    0% { left: 0px;
+    }
+    25% {
+        left: 15px;
+    }
+    50% {
+        left: 25px;
+    }
+    75% {
+        left: 15px
+    }
+}
+
+@keyframes moverighteye {
+    0% { left: 0px;
+    }
+    25% {
+        left: 15px;
+    }
+    50% {
+        left: 25px;
+    }
+    75% {
+        left: 15px
+    }
+}
+
+@keyframes toplipup {
+    0% { top:  0%;
+    }
+    25% {
+        top: -5%;
+    }
+    50% {
+        top: -15%;
+    }
+    75% {
+        top: -5%;
+    }
+}
+
+@keyframes bottomlipdown {
+    0% { top:  50%;
+    }
+    25% {
+        top: 55%;
+    }
+    50% {
+        top: 65%;
+    }
+    75% {
+        top: 55%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    height: 400px;
+    width: 300px;
+    background-color: peachpuff;
+    border-radius: 30% 30% 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: absolute;
+    left: 150px;
+}
+
+/* eyes */
+
+.eye {
+    height: 10%;
+    width: 15%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.eye.left {
+    top: 100px;
+    left: 60px;
+}
+
+.eye.right {
+    top: 100px;
+    right: 60px;
+}
+
+.eye-lid-left-top {
+    height: 5px;
+    width: 45px;
+    position: absolute;
+    background-color: peachpuff;
+    border-radius: 50%;
+    border-top: 1px solid black;
+}
+
+.eye-color-left {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: movelefteye;
+    animation-duration: 5s;
+}
+
+.pupil-left {
+    height: 10px;
+    width: 10px;
+    top: 25%;
+    left: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+
+.eye-lid-left-bottom {
+    height: 5px;
+    width: 45px;
+    top: 35px;
+    position: absolute;
+    background-color: peachpuff;
+    border-radius: 50%;
+    border-bottom: 1px solid black;
+}
+
+.eye-lid-right-top {
+    height: 5px;
+    width: 45px;
+    position: absolute;
+    background-color: peachpuff;
+    border-radius: 50%;
+    border-top: 1px solid black;
+}
+
+.eye-color-right {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: moverighteye;
+    animation-duration: 5s;
+}
+
+.pupil-right {
+    height: 10px;
+    width: 10px;
+    top: 25%;
+    right: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+
+.eye-lid-right-bottom {
+    height: 5px;
+    width: 45px;
+    top: 35px;
+    position: absolute;
+    background-color: peachpuff;
+    border-radius: 50%;
+    border-bottom: 1px solid black;
+}
+
+/* nose */
+
+.nose {
+    height: 120px;
+    width: 30px;
+    left: 45%;
+    top: 25%;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(228, 183, 144)0%, rgb(228, 183, 144)10%, peachpuff 10%, peachpuff 90%, rgb(228, 183, 144)90%, rgb(228, 183, 144)100%);
+}
+
+.nostrel-left {
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 40%;
+    border-top-left-radius: 50%;
+    position: absolute;
+    background-color: peachpuff;
+    border-left: 1px solid black;
+}
+
+.nose-hole-left {
+    height: 10px;
+    width: 10px;
+    left: 25%;
+    top: 75%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+
+.nose-hole-right {
+    height: 10px;
+    width: 10px;
+    left: 25%;
+    top: 75%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+
+.nostrel-right {
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    right: 40%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    background-color: peachpuff;
+    border-right: 1px solid black;
+}
+
+.nose-part-middle {
+    height: 20px;
+    width: 20px;
+    left: 46%;
+    top: 51%;
+    border-radius: 40%;
+    position: absolute;
+    background-color: peachpuff;
+    border-bottom: 1px solid black;
+}
+
+/* mouth */
+
+.mouth {
+    height: 40px;
+    width: 120px;
+    left: 30%;
+    top: 70%;
+    position: absolute;
+    background-color: rgb(219, 177, 126);
+    border-radius: 50%;
+}
+
+.teeth-top:nth-of-type(1) {
+    height: 12px;
+    width: 10px;
+    top: 10px;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 100%;
+}
+
+.teeth-top:nth-of-type(2) {
+    height: 15px;
+    width: 10px;
+    left: 10%;
+    top: 5px;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 50%;
+}
+
+.teeth-top:nth-of-type(3) {
+    height: 18px;
+    width: 10px;
+    left: 20%;
+    top: 2px;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 50%;
+}
+
+.teeth-top:nth-of-type(4) {
+    height: 19px;
+    width: 10px;
+    left: 30%;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 50%;
+}
+
+.teeth-top:nth-of-type(5) {
+    height: 19px;
+    width: 10px;
+    left: 40%;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 30%;
+}
+
+.teeth-top:nth-of-type(6) {
+    height: 19px;
+    width: 10px;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 30%;
+}
+
+.teeth-top:nth-of-type(7) {
+    height: 19px;
+    width: 10px;
+    left: 60%;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 30%;
+}
+
+.teeth-top:nth-of-type(8) {
+    height: 18px;
+    width: 10px;
+    left: 70%;
+    top: 2px;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 50%;
+}
+
+.teeth-top:nth-of-type(9) {
+    height: 15px;
+    width: 10px;
+    left: 80%;
+    top: 5px;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 50%;
+}
+
+.teeth-top:nth-of-type(10) {
+    height: 12px;
+    width: 10px;
+    left: 90%;
+    top: 10px;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 100%;
+}
+
+
+.lip-top {
+    height: 20px;
+    width: 120px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: rgb(247, 158, 158);
+    animation-name: toplipup;
+    animation-duration: 5s;
+}
+
+.lip-bottom {
+    height: 20px;
+    width: 120px;
+    top: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top: 1px solid;
+    position: absolute;
+    background-color: rgb(247, 158, 158);
+    z-index: 1;
+    animation-name: bottomlipdown;
+    animation-duration: 5s;
+}
+
+.teeth-bottom:nth-of-type(13) {
+    height: 12px;
+    width: 10px;
+    top: 60%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+}
+
+.teeth-bottom:nth-of-type(14) {
+    height: 15px;
+    width: 10px;
+    top: 55%;
+    left: 10%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(15) {
+    height: 18px;
+    width: 10px;
+    top: 52%;
+    left: 20%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(16) {
+    height: 19px;
+    width: 10px;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(17) {
+    height: 19px;
+    width: 10px;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 30%;
+}
+
+.teeth-bottom:nth-of-type(18) {
+    height: 19px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 30%;
+}
+
+.teeth-bottom:nth-of-type(19) {
+    height: 19px;
+    width: 10px;
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(20) {
+    height: 18px;
+    width: 10px;
+    top: 52%;
+    left: 70%;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(21) {
+    height: 15px;
+    width: 10px;
+    top: 55%;
+    left: 80%;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: 50%;
+}
+
+.teeth-bottom:nth-of-type(22) {
+    height: 12px;
+    width: 10px;
+    top: 60%;
+    left: 90%;
+    position: absolute;
+    background-color: white;
+    border-bottom-right-radius: 100%;
+}
+

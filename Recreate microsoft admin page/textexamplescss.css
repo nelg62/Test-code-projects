@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header {
+    background-color: rgb(72, 70, 68);
+    height: 48px;
+    display: flex;
+}
+
+#logo {
+    font-size: 16px;
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, SegoeUI-Regular-final, Segoe UI, "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Tahoma, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: auto 0px;
+}
+
+#searchimg {
+    margin-left: auto;
+}
+
+#textbox {
+    align-items: center;
+    margin-right: auto;
+}
+
+#sidesection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233,233,233);
+    width: 297px;
+    height: 1221px;
+}

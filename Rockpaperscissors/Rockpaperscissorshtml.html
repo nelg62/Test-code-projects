@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="rockpaperscosorscss.css">
+</head>
+
+<body>
+    <section id="heading">
+        <h1>Choose your hand</h1>
+    </section>
+
+
+    <!-- button options -->
+    <section id="chooseabutton">
+        <button id="rockbutton" value="rock" onclick="rockbuttonfun()" name="rockbutton"><img
+                src="stone.png"></img></button>
+        <button id="paperbutton" value="paper" onclick="paperbuttonfun()" name="paperbutton"><img
+                src="paper.png"></img></button>
+        <button id="scissorsbutton" value="scissors" onclick="scissorsbuttonfun()" name="scissorsbutton"><img
+                src="scissors.png"></img></button>
+    </section>
+
+    <section id="choices">
+        <!-- you choose -->
+        <section id="player">
+            <div id="playerchoice"></div>
+            <img id="playerimage"></img>
+        </section>
+
+
+        <!-- your oponent choose -->
+        <section id="opponent">
+            <div id="opponentchoice"></div>
+            <img id="opponentimage"></img>
+        </section>
+
+    </section>
+
+    <section id="showresult">
+        <!-- outcome (win/lose/tie) diplayed -->
+        <section id="outcome">
+            <h1 id="result"></h1>
+            <p id="testingtext"></p>
+        </section>
+
+        <section id="total">
+            <div id="totalwins"></div>
+            <div id="totaltie"></div>
+            <div id="totalloss"></div>
+        </section>
+
+    </section>
+
+    <script src="rockpaperscissorsjavascript.js"></script>
+</body>
+
+</html>
