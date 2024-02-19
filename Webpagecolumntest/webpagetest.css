@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.mainsection {
+    border: 1px black solid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sidepanel {
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+}
+
+.topsidediv {
+    width: 100%;
+    height: 5%;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.homediv {
+    height: auto;
+    width: auto;
+}
+
+.homediv ul {
+    padding: 0;
+    margin: 0;
+}
+
+.homedivlist {
+    border: 1px solid black;
+    list-style: none;
+    min-height: 30px;
+    max-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.addremove {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+li button {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.enddivdetail {
+    border: 1px solid black;
+    height: 10%;
+    
+}
+
+.listcontainer {
+    border: 1px solid black;
+    height: 100%;
+    width: 70%;
+}
+
+.unlisteditem {
+    padding: 0;
+    margin: 0;
+
+}
+
+.listitem {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 30px;
+    max-height: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.listitem:hover {
+    background-color: bisque;
+}
+
+.listdiv {
+    margin: 0 3px;
+}
+
+#statusbox {
+    background-color: aqua;
+    width: 70px;
+    border: 1px solid black;
+    text-align: center;
+}
