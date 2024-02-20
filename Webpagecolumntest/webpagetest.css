@@ -48,8 +48,8 @@ body {
 }
 
 .homedivlist:hover {
-background-color: bisque;
-cursor: pointer;
+    background-color: bisque;
+    cursor: pointer;
 }
 
 .addremove {
@@ -68,7 +68,7 @@ li button {
 .enddivdetail {
     border: 1px solid black;
     height: 10%;
-    
+
 }
 
 .listcontainer {

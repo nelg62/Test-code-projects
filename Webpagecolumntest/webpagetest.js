@@ -11,7 +11,7 @@ let li = `
                     <div class="listdiv">Test</div>
                     <div class="listdiv" id="statusbox">Test</div>
                     <div class="listdiv"><img src="user.png" alt=""></div>
-                    
+                    <button onclick="removecurrentitem(this)">Remove item</button>
                 </li>`;
 
 function addbtnfun() {
@@ -26,4 +26,8 @@ function removebtnfun() {
             listItem.parentNode.removeChild(listItem)
         }
     });
+}
+
+function removecurrentitem(e) {
+    e.parentNode.parentNode.removeChild(e.parentNode);
 }
