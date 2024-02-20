@@ -19,8 +19,11 @@ function addbtnfun() {
 }
 
 function removebtnfun() {
+    let listlgth = document.getElementsByClassName("listitem").length - 1;
     let listItem = document.querySelectorAll("#unlisteditem li");
-    Array.from(listItem).forEach(listItem => {
-        listItem.parentNode.removeChild(listItem)
+    Array.from(listItem).forEach((listItem, index) => {
+        if (listlgth === index) {
+            listItem.parentNode.removeChild(listItem)
+        }
     });
 }
