@@ -1,3 +1,8 @@
+const ul = document.getElementById("unlisteditem").innerHTML;
+
+
+
+
 let li = `
 <li class="listitem">
                     <div class="listdiv"><input type="checkbox"></div>
@@ -10,9 +15,15 @@ let li = `
                 </li>`;
 
 function addbtnfun() {
-document.getElementById("unlisteditem").innerHTML += li
+    document.getElementById("unlisteditem").innerHTML += li
 }
 
 function removebtnfun() {
-    
+    let listlgth = document.getElementsByClassName("listitem").length - 1;
+    let listItem = document.querySelectorAll("#unlisteditem li");
+    Array.from(listItem).forEach((listItem, index) => {
+        if (listlgth === index) {
+            listItem.parentNode.removeChild(listItem)
+        }
+    });
 }
