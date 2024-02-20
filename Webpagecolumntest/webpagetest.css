@@ -47,6 +47,11 @@ body {
     padding-top: 10px;
 }
 
+.homedivlist:hover {
+background-color: bisque;
+cursor: pointer;
+}
+
 .addremove {
     border: 1px solid black;
     width: 100%;
@@ -89,6 +94,12 @@ li button {
 
 .listitem:hover {
     background-color: bisque;
+    cursor: pointer;
+}
+
+.listitem img {
+    max-height: 30px;
+    max-width: 30px;
 }
 
 .listdiv {
