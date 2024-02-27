@@ -8,4 +8,4 @@ const userObj = {
 
 document.getElementById('userlisttop').innerHTML = `<li>${userObj.firstName}</li>
 <li>${userObj.lastName}</li> <li>${userObj.randomNumber}</li> <li>${userObj.item}</li>
-<img src="${userObj.userimg}">`
+<img src="${userObj.userimg}" style="height: 100px; width: 100px;">`
