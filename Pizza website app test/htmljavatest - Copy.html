@@ -31,7 +31,7 @@
     </section>
     <section id="pizzabody">
         <!-- second section with option fieldsets -->
-        <section id="makepizzaoptions">
+        <form id="makepizzaoptions">
 
             <!-- choose a base options -->
             <fieldset id="base" name="base">
@@ -72,15 +72,15 @@
             <fieldset id="toppings" name="toppings">
                 <legend>Toppings</legend>
                 <!-- cheese -->
-                <label for="cheese"><input type="checkbox" id="cheese" name="cheese" value="cheese">Cheese<img
+                <label for="cheese"><input type="checkbox" id="cheese" name="topping" value="cheese">Cheese<img
                         src="cheese.png" id="cheesetopping" name="cheesetopping" alt="picture of cheese"></label>
 
                 <!-- ham -->
-                <label for="ham"><input type="checkbox" id="ham" name="ham" value="ham">Ham<img src="roasted.png"
+                <label for="ham"><input type="checkbox" id="ham" name="topping" value="ham">Ham<img src="roasted.png"
                         id="hamtopping" name="hamtopping" alt="picture of ham"></label>
 
                 <!-- chicken -->
-                <label for="chicken"><input type="checkbox" id="chicken" name="chicken" value="chicken">Chicken<img
+                <label for="chicken"><input type="checkbox" id="chicken" name="topping" value="chicken">Chicken<img
                         src="chicken-leg.png" id="chickentopping" name="chickentopping"
                         alt="picture of chicken"></label>
 
@@ -88,14 +88,14 @@
             </fieldset>
 
             <!-- choose sides option -->
-            <fieldset id="sides" name="sides">
+            <fieldset id="sides" name="sides">dessert
                 <legend>Sides</legend>
                 <!-- chips -->
-                <label for="chips"><input type="checkbox" id="chips" name="chips" value="chips">Chips<img
+                <label for="chips"><input type="checkbox" id="chips" name="side" value="chips">Chips<img
                         src="fried-potatoes.png" id="chipssides" name="chipssides" alt="picture of chips"></label>
 
                 <!-- onion rings -->
-                <label for="onionring"><input type="checkbox" id="onionring" name="onionring" value="onionring">Onion
+                <label for="onionring"><input type="checkbox" id="onionring" name="side" value="onionring">Onion
                     Rings<img src="onion-rings.png" id="onionringside" name="onionringside"
                         alt="picture of onion rings"></label>
 
@@ -106,15 +106,15 @@
             <fieldset id="drinks" name="drinks">
                 <legend>Drinks</legend>
                 <!-- coke -->
-                <label for="coke"><input type="checkbox" id="coke" name="coke" value="coke">Coke<img
+                <label for="coke"><input type="checkbox" id="coke" name="drink" value="coke">Coke<img
                         src="soda-bottle.png" id="cokedrink" name="cokedrink" alt="picture of coke"></label>
 
                 <!-- sprite -->
-                <label for="sprite"><input type="checkbox" id="sprite" name="sprite" value="sprite">Sprite<img
+                <label for="sprite"><input type="checkbox" id="sprite" name="drink" value="sprite">Sprite<img
                         src="soft-drink.png" id="spritedrink" name="spritedrink" alt="picture of sprite"></label>
 
                 <!-- fanta -->
-                <label for="fanta"><input type="checkbox" id="fanta" name="fanta" value="fanta">Fanta<img
+                <label for="fanta"><input type="checkbox" id="fanta" name="drink" value="fanta">Fanta<img
                         src="bottle.png" id="fantadrink" name="fantadrink" alt="picture of fanta"></label>
 
 
@@ -124,11 +124,11 @@
             <fieldset id="desserts" name="desserts">
                 <legend>Desserts</legend>
                 <!-- cake -->
-                <label for="cake"><input type="checkbox" id="cake" name="cake" value="cake">Cake<img
+                <label for="cake"><input type="checkbox" id="cake" name="dessert" value="cake">Cake<img
                         src="strawberry-cake.png" id="cakedessert" name="cakedessert" alt="picture of cake"></label>
 
                 <!-- ice cream -->
-                <label for="icecream"><input type="checkbox" id="icecream" name="icecream" value="icecream">Ice
+                <label for="icecream"><input type="checkbox" id="icecream" name="dessert" value="icecream">Ice
                     Cream<img src="ice-cream.png" id="icecreamdessert" name="icecreamdessert"
                         alt="picture of ice cream"></label>
 
@@ -137,11 +137,12 @@
 
             <!-- submit button -->
             <button type="submit">Submit</button>
-        </section>
+        </form>
 
         <footer></footer>
 
     </section>
+    <script src="javascripttest.js"></script>
 </body>
 
 </html>
