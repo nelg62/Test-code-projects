@@ -24,6 +24,11 @@ form.addEventListener('submit', (e) => {
     <p>your password is ${obj.pwd}</p>
     <p>your email is ${obj.eml}</p>
     <p>you have chosen ${obj.animalchoice}</p>
-    <p>your meals will be ${JSON.parse(obj.FoodChoices)}</p>`
+    <p>your meals will be</p>
+    <ul>
+    <li>${JSON.parse(obj.FoodChoices)[0]}</li>
+    <li>${JSON.parse(obj.FoodChoices)[1]}</li>
+    <li>${JSON.parse(obj.FoodChoices)[2]}</li>
+    </ul>`
 })
 
