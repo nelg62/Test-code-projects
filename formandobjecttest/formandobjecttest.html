@@ -8,10 +8,15 @@
 </head>
 <body>
     <form>
+        <!-- input for first name -->
         <label for="fname">First Name: <input type="text" name="fname" id="fname"></label>
+        <!-- input for last name -->
         <label for="lname">Last Name: <input type="text" name="lname" id="lname"></label>
+        <!-- input for password  -->
         <label for="pwd">Password: <input type="password" name="pwd" id="pwd"></label>
+        <!-- input for email -->
         <label for="eml">Email: <input type="email" name="eml" id="eml"></label>
+        <!-- dropdown for choosing an animal -->
         <label for="animalchoice">Choose an animal: <select name="animalchoice" id="animalchoice">
             <option value="Dog">Dog</option>
             <option value="Cat">Cat</option>
@@ -19,6 +24,7 @@
             <option value="Monkey">Monkey</option>
         </select></label>
 
+        <!-- checkbox for choosing food options -->
         <div>
             <p>What would you like:</p>
         <label for="breakfast">Breakfast: <input type="checkbox" name="foodoption" id="breakfast" value="Breakfast"></label>
@@ -27,9 +33,11 @@
         </div>
 
 
+        <!-- submit button -->
         <input type="submit">
     </form>
 
+    <!-- form output div -->
     <div id="userdata"></div>
 
     <script src="formandobjecttest.js"></script>
