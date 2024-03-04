@@ -19,6 +19,12 @@ form.addEventListener('submit', (e) => {
     console.log(obj)
     console.log(Array.from(formData))
 
+
+    // get amout of options chosen from checkbox 
+    foodobjleng = JSON.parse(obj.FoodChoices).length
+
+    
+
     document.getElementById('userdata').innerHTML = `
     <p>your name is ${obj.fname} ${obj.lname}</p>
     <p>your password is ${obj.pwd}</p>
@@ -30,5 +36,7 @@ form.addEventListener('submit', (e) => {
     <li>${JSON.parse(obj.FoodChoices)[1]}</li>
     <li>${JSON.parse(obj.FoodChoices)[2]}</li>
     </ul>`
+
+    console.log()
 })
 
