@@ -3,14 +3,23 @@ async function fetchURLData(url) {
         const mapUrl = url.map((url) => fetch(url))
         const promiseUrl = await Promise.all(mapUrl)
         const mapPromise = promiseUrl.map((promiseUrl) => promiseUrl.text())
-        console.log("console of URL:",await Promise.all(mapPromise).then(output1 => output1.map(output2 => JSON.parse(output2)))) //makes the text into json and usable with parse
+        const output = await Promise.all(mapPromise).then(output1 => output1.map(output2 => JSON.parse(output2))) 
+        for (const item of output) {
+            console.log(item)
+            document.getElementById('apitest').innerHTML += `
+            <li><div>User ID: ${item.userId}</div>
+            <div>ID: ${item.id}</div>
+            <div>Title: ${item.title}</div>
+            <div>Status: ${item.completed}</div>
+            </li>`
+        }
     } catch (error){
         console.log("error info:"+ error)
 
     }
 }
 
-document.getElementById("apitest").innerHTML = 
+
 
 fetchURLData(['https://jsonplaceholder.typicode.com/todos/1','https://jsonplaceholder.typicode.com/todos/2','https://jsonplaceholder.typicode.com/todos/3'])
 
