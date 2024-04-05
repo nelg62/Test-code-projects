@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolistapicall.css">
+</head>
+<body>
+    <!-- Form -->
+    <form id="fillForm">
+        <!-- First Name input -->
+        <label for="fName">First Name: </label><input type="text" id="fName" name="firstName">
+        <!-- Last Name input -->
+        <label for="lName">Last Name: </label><input type="text" id="lName" name="lastName">
+
+        <!-- dropdown for choosing animal -->
+        <label for="animalchoice">Choose an animal: <select name="animalchoice" id="animalchoice">
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Frog">Frog</option>
+            <option value="Monkey">Monkey</option>
+        </select></label>
+
+        <!-- checkbox for choosing food -->
+        <div class="fooddiv">
+            <p>What would you like:</p>
+        <label for="breakfast">Breakfast: <input type="checkbox" name="foodoption" id="breakfast" value="Breakfast"></label>
+        <label for="lunch">Lunch: <input type="checkbox" name="foodoption" id="lunch" value="Lunch"></label>
+        <label for="dinner">Dinner: <input type="checkbox" name="foodoption" id="dinner" value="Dinner"></label>
+        </div>
+
+        <!-- submit button -->
+        <input type="submit" id="subBtn">
+
+    </form>
+<div id="apitest"></div>
+    <!-- list item output -->
+    <ul id="addItems"></ul>
+
+
+    <script src="todolistapicall.js"></script>
+</body>
+</html>
